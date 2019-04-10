@@ -2,8 +2,10 @@
 
 namespace DataCompression
 {
+    /*
     public class Compressor : ICompressor
     {
+        
         private CompressionType compressionType;
 
         public Compressor(CompressionType type)
@@ -13,7 +15,7 @@ namespace DataCompression
 
         public string Compress(string data)
         {
-            switch (this.compressionType)
+            /*switch (this.compressionType)
             {
                 case CompressionType.Repetition:
                     return CompressWithRepetitionAlgo(data);
@@ -24,6 +26,7 @@ namespace DataCompression
                 default:
                     return data;
             }
+            return "";
         }
 
         private string CompressByDictionaryAlgo(string data)
@@ -40,5 +43,5 @@ namespace DataCompression
         {
             throw new NotImplementedException();
         }
-    }
+    }*/
 }

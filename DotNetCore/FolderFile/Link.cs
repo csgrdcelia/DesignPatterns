@@ -11,5 +11,11 @@ namespace FolderFile
             Name = name;
             Element = element;
         }
+
+        public Link (IElement element) 
+        {
+            Name = element.Name;
+            Element = element;
+        }
     }
 }

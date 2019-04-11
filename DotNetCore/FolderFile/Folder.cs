@@ -8,6 +8,11 @@ namespace FolderFile
 
         public List<IElement> Elements { get; set; }
 
+        public Folder (string name) 
+        {
+            Name = name;
+        }
+        
         public int GetContainsNumber()
         {
             return Elements == null ? 0 : Elements.Count;

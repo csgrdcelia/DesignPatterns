@@ -10,8 +10,8 @@ namespace DesignPatterns
         [TestMethod]
         public void Should_folder_contains_one_element_when_gettings_contains()
         {
-            var textFile = new File { Name = "data.txt" };
-            var parentFolder = new Folder { Name = "Parent Folder" };
+            var textFile = new File("data.txt");
+            var parentFolder = new Folder("Parent Folder");
             parentFolder.Elements = new List<IElement>() { textFile };
             var containsNumber = parentFolder.GetContainsNumber();
             Assert.AreEqual(1, containsNumber);
@@ -30,10 +30,10 @@ namespace DesignPatterns
 
         private static Folder CreateFolderTree()
         {
-            var textFile = new File { Name = "data.txt" };
-            var firstFolder = new Folder { Name = "Data Folder" };
-            var secondFolder = new Folder { Name = "Folder" };
-            var parentFolder = new Folder { Name = "Parent Folder" };
+            var textFile = new File("data.txt");
+            var firstFolder = new Folder("Data Folder");
+            var secondFolder = new Folder("Folder");
+            var parentFolder = new Folder("Parent Folder");
             parentFolder.Elements = new List<IElement>() { textFile, firstFolder };
 
             return parentFolder;

@@ -16,7 +16,7 @@ namespace DesignPatterns.Tests
             
             Assert.IsTrue(order.Items.Contains(item));
         }
-
+        
         [TestMethod]
         [ExpectedException(typeof(NotSupportedException))]
         public void Should_throw_notSuportedException_when_adding_an_item_into_a_validated_order()
@@ -26,7 +26,7 @@ namespace DesignPatterns.Tests
             var item = new Item();
             order.AddItem(item);
         }
-
+        
         [TestMethod]
         [ExpectedException(typeof(NotSupportedException))]
         public void Should_throw_notSupportedException_when_adding_an_item_into_a_delivered_order()

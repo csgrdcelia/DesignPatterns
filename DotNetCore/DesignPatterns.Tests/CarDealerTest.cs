@@ -7,7 +7,7 @@ namespace DesignPatterns.Tests
     public class CarDealerTest
     {
         [TestMethod]
-        public void Should_calculate_french()
+        public void Should_calculate_french_tax()
         {
             FrenchOrder frenchOrder = new FrenchOrder(10);
             double result = frenchOrder.CalculateAmount();
@@ -16,7 +16,7 @@ namespace DesignPatterns.Tests
         }
 
         [TestMethod]
-        public void Should_calculate_luxembourgist()
+        public void Should_calculate_luxembourgist_tax()
         {
             LuxembourgishOrder luxembourgishOrder = new LuxembourgishOrder(5,10);
             double result = luxembourgishOrder.CalculateAmount();

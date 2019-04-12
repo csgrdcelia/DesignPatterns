@@ -1,12 +1,9 @@
 ﻿namespace ShoesFabric
 {
-    internal class StreetShoe : IShoe
+    public class StreetShoe : IShoe
     {
-        private ShoeType type;
-
-        public StreetShoe(ShoeType leather)
+        public StreetShoe()
         {
-            this.type = leather;
         }
     }
 }

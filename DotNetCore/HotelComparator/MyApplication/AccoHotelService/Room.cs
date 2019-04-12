@@ -12,5 +12,6 @@
         }
 
         public int Number { get => this.roomNumber; }
+        public RoomType RoomType { get => this.type; }
     }
 }

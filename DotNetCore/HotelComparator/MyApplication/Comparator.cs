@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace HotelComparator
 {
-    public class Comparator
+    public class Comparator 
     {
         private readonly IAccoHotel accoHotel;
 

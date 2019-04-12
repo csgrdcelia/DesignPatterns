@@ -21,6 +21,7 @@
     <ProjectReference Include="..\ShoesFabric\ShoesFabric.csproj" />
     <ProjectReference Include="..\Shopping\Shopping.csproj" />
     <ProjectReference Include="..\SolarSystem\SolarSystem.csproj" />
+    <ProjectReference Include="..\CarDealer\CarDealer.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,17 +1,19 @@
-﻿namespace LikeCounter.LikeBox
+﻿using System;
+namespace LikeCounter.LikeBox
 {
+    // Observer
     public class LikesCounter
     {
         private readonly ILikeNumberProvider likeNumberProvider;
 
-        public LikesCounter(ILikeNumberProvider likeNumberProvider)
+        public void Update(int number)
         {
-            this.likeNumberProvider = likeNumberProvider;
+            Console.WriteLine(number);
+        }
+        public LikesCounter(ProductAnalysis product)
+        {
+            product.Add(this);
         }
 
-        public int CountLikes()
-        {
-            return this.likeNumberProvider.GetNumberLikes();
-        }
     }
 }

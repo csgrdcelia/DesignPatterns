@@ -7,7 +7,7 @@ namespace DesignPatterns.Tests
     [TestClass]
     public class ProductLikerTest
     {
-        [TestMethod]
+        /*[TestMethod]
         public void Should_return_one_like_when_only_one_like_added()
         {
             ProductAnalysis liker = new ProductAnalysis();
@@ -43,6 +43,6 @@ namespace DesignPatterns.Tests
             runner.Run();
 
             runner.Stop();
-        }
+        }*/
     }
 }

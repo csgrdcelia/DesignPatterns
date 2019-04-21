@@ -32,8 +32,8 @@ namespace LikeCounter.LikeBox
 
         private void CallLikesCounter(object sender, ElapsedEventArgs e)
         {
-            this.likesNumber = this.likesCounter.CountLikes();
-            Console.WriteLine(this.likesNumber);
+            //this.likesNumber = this.likesCounter.CountLikes();
+            //Console.WriteLine(this.likesNumber);
         }
     }
 }

@@ -23,6 +23,17 @@ namespace Shopping
             this.status = status;
             this.items = items;
         }
+
+        public void SetMemento(Memento memento)
+        {
+            status = memento.GetState();
+        }
+
+        public Memento CreateMemento() 
+        {
+            return new Memento(status);
+        }
+
         public void AddItem(Item item)
         {
             status.AddItem(items, item);

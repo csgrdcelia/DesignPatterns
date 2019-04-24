@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shopping
 {
-    public class Order
+    public class Order : ICloneableOrder
     {
         private IOrderStatus status;
         private List<Item> items;
@@ -16,6 +16,12 @@ namespace Shopping
         {
             items = new List<Item>();
             status = new InProgressStatus();
+        }
+
+        public Order(IOrderStatus status, List<Item> items)
+        {
+            this.status = status;
+            this.items = items;
         }
         public void AddItem(Item item)
         {
@@ -29,6 +35,11 @@ namespace Shopping
         public void NextStatus()
         {
             status = status.NextStatus;
+        }
+
+        public ICloneableOrder Clone()
+        {
+            return new Order(new InProgressStatus(), this.items);
         }
     }
 }

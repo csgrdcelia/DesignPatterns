@@ -39,7 +39,9 @@ namespace Shopping
 
         public ICloneableOrder Clone()
         {
-            return new Order(new InProgressStatus(), this.items);
+            Order order = (Order)this.MemberwiseClone();
+            order.status = new InProgressStatus();
+            return (ICloneableOrder)order;
         }
     }
 }

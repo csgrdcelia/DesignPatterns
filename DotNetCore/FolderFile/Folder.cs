@@ -43,5 +43,10 @@ namespace FolderFile
         {
             return Elements == null ? 0 : Elements.Count;
         }
+
+        public void Accept(IWriter writer)
+        {
+            writer.Write(this);
+        }
     }
 }

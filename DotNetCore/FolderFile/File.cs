@@ -8,5 +8,9 @@
         {
             Name = name;
         }
+        public void Accept(IWriter writer)
+        {
+            writer.Write(this);
+        }
     }
 }

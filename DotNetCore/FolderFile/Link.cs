@@ -17,5 +17,10 @@ namespace FolderFile
             Name = element.Name;
             Element = element;
         }
+
+        public void Accept(IWriter writer)
+        {
+            writer.Write(this);
+        }
     }
 }

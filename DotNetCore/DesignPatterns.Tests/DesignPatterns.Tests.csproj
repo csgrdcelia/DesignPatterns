@@ -23,6 +23,7 @@
     <ProjectReference Include="..\SolarSystem\SolarSystem.csproj" />
     <ProjectReference Include="..\CarDealer\CarDealer.csproj" />
     <ProjectReference Include="..\Creperie\Creperie.csproj" />
+    <ProjectReference Include="..\BurgerKing\BurgerKing.csproj" />
   </ItemGroup>
 
 </Project>

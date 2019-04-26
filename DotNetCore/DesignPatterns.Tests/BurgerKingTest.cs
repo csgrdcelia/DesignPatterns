@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BurgerKing;
+using System;
 
 namespace DesignPatterns.Tests
 {
@@ -24,5 +25,8 @@ namespace DesignPatterns.Tests
             double price = new Mustard(new Plenty(), new Ketchup(new Normal(), new Cheeseburger())).GetPrice();
             Assert.AreEqual(18, price);
         }
+
+
+
     }
 }

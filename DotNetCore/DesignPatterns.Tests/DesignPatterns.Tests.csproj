@@ -25,6 +25,7 @@
     <ProjectReference Include="..\Creperie\Creperie.csproj" />
     <ProjectReference Include="..\BurgerKing\BurgerKing.csproj" />
     <ProjectReference Include="..\ComputerBuilder\ComputerBuilder.csproj" />
+    <ProjectReference Include="..\Concessionnaire\Concessionnaire.csproj" />
   </ItemGroup>
 
 </Project>

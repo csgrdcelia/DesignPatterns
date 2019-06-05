@@ -7,5 +7,9 @@ namespace ComputerBuilderNs
         public double GetPrice() {
             return _price;
         }
+
+        public string GetKey() {
+            return "GTX1060";
+        }
     }
 }
